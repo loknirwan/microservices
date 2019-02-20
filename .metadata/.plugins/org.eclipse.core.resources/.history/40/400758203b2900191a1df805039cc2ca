@@ -1,0 +1,8 @@
+package com.service.patient.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class PatientsDispatcherServletInitialiser {
+
+}

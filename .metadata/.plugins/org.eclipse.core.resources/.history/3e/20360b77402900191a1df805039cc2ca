@@ -1,0 +1,36 @@
+package com.service.patients;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
+import org.springframework.web.servlet.DispatcherServlet;
+
+import com.service.patient.config.PatientRootContextInitialiser;
+import com.service.patient.config.PatientsDispatcherServletInitialiser;
+
+@EnableEurekaClient
+@SpringBootApplication
+@Import(PatientRootContextInitialiser.class)
+public class PatientsApplication {
+	
+	@Bean
+    public ServletRegistrationBean<DispatcherServlet> patinetServletConfig() {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(PatientsDispatcherServletInitialiser.class);
+        DispatcherServlet dispatcherServlet = new DispatcherServlet();
+        dispatcherServlet.setApplicationContext(context);
+        ServletRegistrationBean<DispatcherServlet> servletRegistrationBean = new ServletRegistrationBean<>(dispatcherServlet, "/patient/v1/*");
+        servletRegistrationBean.setName("patient-servlet");
+        return servletRegistrationBean;
+    }
+
+	public static void main(String[] args) {
+		SpringApplication.run(PatientsApplication.class, args);
+	}
+
+}
+

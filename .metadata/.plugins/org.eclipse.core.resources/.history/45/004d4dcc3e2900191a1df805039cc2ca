@@ -1,0 +1,17 @@
+package com.service.patients;
+
+public class PropertyHolder {
+	
+	private static class DataSourcePropertyHolder {
+		
+		private String type;
+		private String name;
+		private int port;
+		private String host;
+		private String username;
+		private String password;
+		private String uri;
+		
+	}
+	
+}

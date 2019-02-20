@@ -1,0 +1,36 @@
+package com.service.patients;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.DispatcherServlet;
+
+import com.service.patient.config.PatientsDispatcherServletInitialiser;
+
+@EnableEurekaClient
+@SpringBootApplication
+public class PatientsApplication extends SpringBootServletInitializer {
+	
+	
+	
+	@Bean
+    public ServletRegistrationBean<DispatcherServlet> patinetServletConfig() {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(PatientsDispatcherServletInitialiser.class);
+        DispatcherServlet dispatcherServlet = new DispatcherServlet();
+        dispatcherServlet.setApplicationContext(context);
+        ServletRegistrationBean<DispatcherServlet> servletRegistrationBean = new ServletRegistrationBean<>(dispatcherServlet, "/api/1/*");
+        servletRegistrationBean.setName("api-v1");
+        return servletRegistrationBean;
+    }
+
+	public static void main(String[] args) {
+		SpringApplication.run(PatientsApplication.class, args);
+	}
+
+}
+

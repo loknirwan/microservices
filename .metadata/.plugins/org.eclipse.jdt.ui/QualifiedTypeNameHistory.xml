@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.server.EnableEurekaServer"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.config.server.EnableConfigServer"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.EnableEurekaClient"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletContainerInitializer"/>
+<fullyQualifiedTypeName name="org.springframework.boot.web.servlet.support.SpringBootServletInitializer"/>
+<fullyQualifiedTypeName name="org.springframework.boot.web.servlet.ServletRegistrationBean"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+<fullyQualifiedTypeName name="com.service.patient.config.PatientsDispatcherServletInitialiser"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.DispatcherServlet"/>
+<fullyQualifiedTypeName name="com.service.patient.config.PatientRootContextInitialiser"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="com.service.patients.PropertyHolder"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="org.springframework.orm.jpa.JpaTransactionManager"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+<fullyQualifiedTypeName name="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"/>
+<fullyQualifiedTypeName name="org.springframework.orm.jpa.vendor.HibernateJpaDialect"/>
+<fullyQualifiedTypeName name="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+<fullyQualifiedTypeName name="org.springframework.orm.jpa.JpaDialect"/>
+<fullyQualifiedTypeName name="org.springframework.orm.jpa.JpaVendorAdapter"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="com.service.patient.cloud.property.GeneralPropertyHolder"/>
+<fullyQualifiedTypeName name="com.service.patient.cloud.property.HibernatePropertyHolder"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.datasource.DriverManagerDataSource"/>
+<fullyQualifiedTypeName name="com.service.patient.cloud.property.DataSourcePropertyHolder"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.DependsOn"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.service.encounter.config.EncounterDispatcherServletInitialiser"/>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.transaction.PlatformTransactionManagerCustomizer"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.PlatformTransactionManager"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="com.service.encounter.cloud.property.GeneralPropertyHolder"/>
+<fullyQualifiedTypeName name="com.service.encounter.cloud.property.HibernatePropertyHolder"/>
+<fullyQualifiedTypeName name="com.service.encounter.cloud.property.DataSourcePropertyHolder"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Import"/>
+<fullyQualifiedTypeName name="com.service.encounter.config.EncounterRootContextInitialiser"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.EnableTransactionManagement"/>
+</qualifiedTypeNameHistroy>

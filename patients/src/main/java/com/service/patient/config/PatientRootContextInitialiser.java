@@ -48,7 +48,7 @@ public class PatientRootContextInitialiser {
 	@Bean("entityManagerFactory")
 	public EntityManagerFactory entityManagerFactory(JpaDialect jpaDialect, JpaVendorAdapter jpaVendorAdapter, DataSource dataSource, Properties jpaProperties) {
 		LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
-		factoryBean.setPackagesToScan("com.service.patinet.entity");
+		factoryBean.setPackagesToScan("com.service.patient.entity");
 		factoryBean.setJpaDialect(jpaDialect);
 		factoryBean.setJpaVendorAdapter(jpaVendorAdapter);
 		factoryBean.setJpaProperties(jpaProperties);

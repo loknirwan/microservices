@@ -1,9 +1,0 @@
-package com.service.patients;
-
-public class PropertyHolder {
-	
-	private static class DataSourcePropertyHolder {
-		
-	}
-	
-}

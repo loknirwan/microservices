@@ -1,5 +1,0 @@
-package com.service.encounter.config;
-
-public class EncounterDispatcherServletInitialiser {
-
-}

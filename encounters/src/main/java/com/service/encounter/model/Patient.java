@@ -25,15 +25,6 @@ public class Patient {
 	private String city;
 	private String state;
 	private String zip;
-	private List<Allergy> allergies;
-	private List<Medication> medications;
-	private List<Encounter> encounters;
-	private List<Observation> observations;
-	private List<ImagingStudy> imagingStudies;
-	private List<Procedure> procedures;
-	private List<Condition> conditions;
-	private List<Immunization> immunizations;
-	private List<Careplan> careplans;
 
 	public Patient() {
 	}
@@ -45,7 +36,7 @@ public class Patient {
 	public Patient(String id, Date birthDate, Date deathDate, String ssn, String driverLicence, String passport,
 			String prefix, String firstName, String lastName, String suffix, String maidenName, String maritalStatus,
 			String race, String ethnicity, String gender, String birthPlace, String address, String city, String state,
-			String zip, List<Allergy> allergies) {
+			String zip) {
 		this.id = id;
 		this.birthDate = birthDate;
 		this.deathDate = deathDate;
@@ -66,7 +57,6 @@ public class Patient {
 		this.city = city;
 		this.state = state;
 		this.zip = zip;
-		this.allergies = allergies;
 	}
 
 	public String getId() {
@@ -227,77 +217,5 @@ public class Patient {
 
 	public void setZip(String zip) {
 		this.zip = zip;
-	}
-
-	public List<Allergy> getAllergies() {
-		return allergies;
-	}
-
-	public void setAllergies(List<Allergy> allergies) {
-		this.allergies = allergies;
-	}
-
-	public List<Medication> getMedications() {
-		return medications;
-	}
-
-	public void setMedications(List<Medication> medications) {
-		this.medications = medications;
-	}
-
-	public List<Encounter> getEncounters() {
-		return encounters;
-	}
-
-	public void setEncounters(List<Encounter> encounters) {
-		this.encounters = encounters;
-	}
-
-	public List<Observation> getObservations() {
-		return observations;
-	}
-
-	public void setObservations(List<Observation> observations) {
-		this.observations = observations;
-	}
-
-	public List<ImagingStudy> getImagingStudies() {
-		return imagingStudies;
-	}
-
-	public void setImagingStudies(List<ImagingStudy> imagingStudies) {
-		this.imagingStudies = imagingStudies;
-	}
-
-	public List<Procedure> getProcedures() {
-		return procedures;
-	}
-
-	public void setProcedures(List<Procedure> procedures) {
-		this.procedures = procedures;
-	}
-
-	public List<Condition> getConditions() {
-		return conditions;
-	}
-
-	public void setConditions(List<Condition> conditions) {
-		this.conditions = conditions;
-	}
-
-	public List<Immunization> getImmunizations() {
-		return immunizations;
-	}
-
-	public void setImmunizations(List<Immunization> immunizations) {
-		this.immunizations = immunizations;
-	}
-
-	public List<Careplan> getCareplans() {
-		return careplans;
-	}
-
-	public void setCareplans(List<Careplan> careplans) {
-		this.careplans = careplans;
 	}
 }

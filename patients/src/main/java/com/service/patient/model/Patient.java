@@ -45,7 +45,9 @@ public class Patient {
 	public Patient(String id, Date birthDate, Date deathDate, String ssn, String driverLicence, String passport,
 			String prefix, String firstName, String lastName, String suffix, String maidenName, String maritalStatus,
 			String race, String ethnicity, String gender, String birthPlace, String address, String city, String state,
-			String zip, List<Allergy> allergies) {
+			String zip, List<Allergy> allergies, List<Medication> medications, List<Encounter> encounters, List<Observation> observations,
+			List<ImagingStudy> imagingStudies, List<Procedure> procedures, List<Condition> conditions, List<Immunization> immunizations,
+			List<Careplan> careplans) {
 		this.id = id;
 		this.birthDate = birthDate;
 		this.deathDate = deathDate;
@@ -67,6 +69,14 @@ public class Patient {
 		this.state = state;
 		this.zip = zip;
 		this.allergies = allergies;
+		this.medications = medications;
+		this.encounters= encounters;
+		this.observations = observations;
+		this.imagingStudies = imagingStudies;
+		this.procedures = procedures;
+		this.conditions = conditions;
+		this.immunizations = immunizations;
+		this.careplans = careplans;
 	}
 
 	public String getId() {

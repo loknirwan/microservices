@@ -17,6 +17,10 @@ import javax.persistence.TemporalType;
 @Table(name="encounters", schema="synthea")
 public class Encounter implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6109653801341403727L;
 	@Id
 	@Column(name="ID", length=256, nullable=false, updatable=false)
 	private String id;

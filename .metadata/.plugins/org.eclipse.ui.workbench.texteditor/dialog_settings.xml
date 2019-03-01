@@ -6,7 +6,7 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="encounters" key="selection"/>
+		<item value="allergies" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
@@ -15,6 +15,7 @@
 			<item value="patients"/>
 		</list>
 		<list key="replacehistory">
+			<item value="allergies"/>
 			<item value="encounters"/>
 		</list>
 	</section>

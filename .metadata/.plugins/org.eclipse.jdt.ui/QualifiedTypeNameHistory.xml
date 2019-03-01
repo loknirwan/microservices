@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.server.EnableEurekaServer"/>
-<fullyQualifiedTypeName name="org.springframework.cloud.config.server.EnableConfigServer"/>
-<fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.EnableEurekaClient"/>
-<fullyQualifiedTypeName name="javax.servlet.ServletContainerInitializer"/>
-<fullyQualifiedTypeName name="org.springframework.boot.web.servlet.support.SpringBootServletInitializer"/>
 <fullyQualifiedTypeName name="org.springframework.boot.web.servlet.ServletRegistrationBean"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
@@ -60,4 +55,9 @@
 <fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="javax.persistence.Temporal"/>
 <fullyQualifiedTypeName name="javax.persistence.Column"/>
+<fullyQualifiedTypeName name="com.service.allergy.config.AllergyRootContextInitialiser"/>
+<fullyQualifiedTypeName name="com.service.allergy.config.AllergiesDispatcherServletInitialiser"/>
+<fullyQualifiedTypeName name="com.service.allergy.cloud.property.GeneralPropertyHolder"/>
+<fullyQualifiedTypeName name="com.service.allergy.cloud.property.HibernatePropertyHolder"/>
+<fullyQualifiedTypeName name="com.service.allergy.cloud.property.DataSourcePropertyHolder"/>
 </qualifiedTypeNameHistroy>
